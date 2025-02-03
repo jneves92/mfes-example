@@ -5,7 +5,7 @@ module.exports = withModuleFederationPlugin({
   name: 'flights',
 
   exposes: {
-    './Component': './projects/flights/src/app/app.component.ts',
+    './FlightsPage': './projects/flights/src/app/feature-flights/feature-flights.component.ts',
   },
 
   shared: {
