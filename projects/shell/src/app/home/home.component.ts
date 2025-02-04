@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
+import { LoginComponent, UserAuthComponent } from 'auth-lib';
+
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [LoginComponent, UserAuthComponent],
   template: `
-    <p>
-      home works!
-    </p>
+    <lib-user-auth></lib-user-auth>
+
+    <hr>
+
+    <lib-login></lib-login>
   `,
   styles: ``
 })

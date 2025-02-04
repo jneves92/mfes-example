@@ -1,0 +1,17 @@
+<div class="login-container">
+  <h2>Login</h2>
+  <form>
+    <label for="username">User Name:</label>
+    <input type="text" id="username" [(ngModel)]="username" [ngModelOptions]="{standalone: true}"
+      placeholder="Username" class="input-field" />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}"
+      placeholder="********" class="input-field" />
+
+    <div class="button-group">
+      <button type="submit" class="btn" (click)="login()">Login</button>
+      <button type="button" class="btn secondary" (click)="logout()">Logout</button>
+    </div>
+  </form>
+</div>
